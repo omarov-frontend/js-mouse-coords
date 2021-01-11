@@ -1,14 +1,14 @@
 const testElement = document.querySelector('#test');
-const offX = document.querySelector('#offx');
-const offY = document.querySelector('#offy');
+const xElement = document.querySelector('#coords__x');
+const yElement = document.querySelector('#coords__y');
 
-testElement.addEventListener('mousemove', function({ offsetX, offsetY, target }) {
-    offX.innerHTML = offsetX;
-    offY.innerHTML = offsetY;
+testElement.addEventListener('mousemove', function({offsetX, offsetY, target}) {
+    xElement.innerHTML = offsetX;
+    yElement.innerHTML = offsetY;
 
     target.classList.add('hovered');
 });
 
-testElement.addEventListener('mouseout', function( {target} ) {
+testElement.addEventListener('mouseout', function({target}) {
     target.classList.remove('hovered');
 });
