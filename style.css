@@ -11,3 +11,11 @@
     background-color: #eee;
     margin: 20px auto;
 }
+
+.coords {
+    text-align: center;
+}
+
+.hovered {
+    outline: 2px solid red;
+}

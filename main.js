@@ -1,6 +1,14 @@
-document.querySelector('#test').onmousemove = function(event) {
-    event = event || window.event;
+const testElement = document.querySelector('#test');
+const offX = document.querySelector('#offx');
+const offY = document.querySelector('#offy');
 
-    document.querySelector('#offx').innerHTML = event.offsetX;
-    document.querySelector('#offy').innerHTML = event.offsetY;
-}
+testElement.addEventListener('mousemove', function({ offsetX, offsetY, target }) {
+    offX.innerHTML = offsetX;
+    offY.innerHTML = offsetY;
+
+    target.classList.add('hovered');
+});
+
+testElement.addEventListener('mouseout', function( {target} ) {
+    target.classList.remove('hovered');
+});
