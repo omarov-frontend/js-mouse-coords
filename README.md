@@ -4,4 +4,4 @@
 > Выводим координаты мыши, относительно блока в момент движения курсора мыши внутри блока.
 > Координаты выводить под блоком.
 
-Demo - https://omarov-frontend.github.io/js-mouse-coords/
+Demo - https://omarovfrontend.github.io/js-mouse-coords/
